@@ -1,0 +1,93 @@
+#footer {
+    font-family: Courier New, monospace;
+    padding-top: 10px;
+    color: #000000;
+    --bs-bg-opacity: 1;
+    /* background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important; */
+}
+
+.footer-element {
+    text-align: center;
+    padding: 10px;
+}
+
+#footer ul {
+    list-style: none;
+    width: fit-content;
+    margin: auto;
+    padding: 0;
+
+}
+
+#footer li {
+    text-align: left;
+}
+
+#footer a {
+    color: black;
+    text-decoration: none;
+}
+
+#footer a.current {
+    font-weight: bold;
+    cursor: default;
+}
+
+.hr-line-footer {
+    margin: 10px 0;
+    padding: 5px;
+    border: none;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.footer-element h3 {
+    padding: 30px 0 8px;
+    position: relative;
+}
+
+.footer-element h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 90%;
+    height: 21px;
+    transform: skew(-12deg) translateX(0%);
+    background: rgba(212, 175, 55, 0.37);
+    z-index: -1;
+}
+
+.footer-element a {
+    text-decoration: none;
+    /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+    display: inline-block;
+    /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный 
+    line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+    color: #000000 !important;
+    /*Задаём цвет ссылки*/
+}
+
+.footer-element a:after {
+    display: block;
+    /*превращаем его в блочный элемент*/
+    content: "";
+    /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 2px;
+    /*задаём высоту линии*/
+    width: 0%;
+    /*задаём начальную ширину элемента (линии)*/
+    background-color: rgb(212, 175, 55);
+    /*цвет фона элемента*/
+    transition: width 0.6s ease-in-out;
+    /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+
+.footer-element a:hover:after,
+.footer-element a:focus:after {
+    width: 100%;
+}
+
+.footer-element a:hover {
+    color: #000000;
+}

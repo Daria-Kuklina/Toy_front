@@ -1,0 +1,50 @@
+.a-back {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+.a-back:link {
+    color: rgb(159, 128, 25);
+}
+
+.a-back:visited {
+    color: rgb(159, 128, 25);
+}
+
+.a-back:focus {
+    border-bottom: 1px solid;
+    background: rgb(238, 220, 160);
+}
+
+.a-back:hover {
+    border-bottom: 1px solid;
+    background: rgb(238, 220, 160);
+}
+
+.a-back:active {
+    background: rgb(159, 128, 25);
+    color: rgb(238, 220, 160);
+}
+
+.hr-line1 {
+    text-align: center;
+    margin: 10px 0;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid rgb(212, 175, 55);
+}
+
+.label {
+    font-size: 20px;
+}
+
+.fr-control:active {
+    box-shadow: 0 0 10px rgb(211, 181, 80) !important;
+    border-color: rgb(211, 181, 80);
+}
+
+.fr-control:focus {
+    box-shadow: 0 0 10px rgb(211, 181, 80) !important;
+    border-color: rgb(211, 181, 80);
+}
